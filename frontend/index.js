@@ -14,11 +14,11 @@ root.render(
     <h1>Welcome to the GRID</h1>
     <nav>
       <NavLink to="/">Functional</NavLink>
-      <NavLink to="/class-based">Class-Based</NavLink>
+      {/* <NavLink to="/class-based">Class-Based</NavLink> */}
     </nav>
     <Routes>
       <Route path="/" element={<AppFunctional className="functional" />} />
-      <Route path="class-based" element={<AppClass className="class-based" />} />
+      {/* <Route path="class-based" element={<AppClass className="class-based" />} /> */}
     </Routes>
   </BrowserRouter>
 )
