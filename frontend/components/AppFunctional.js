@@ -9,7 +9,6 @@ export default function AppFunctional(props) {
   const [ index, setIndex ] = useState(4); // the index the "B" is at
 
   function getXY() {
-    // [0:(1,1), 1:(1,2), 2:(1,3), 3:(2,1), 4:(2,2), 5:(2.3), 6:(3,1), 7:(3,2), 8:(3,3)]
     let x = 0;
     let y = 0;
     if (index - 3 > 2) {
