@@ -75,10 +75,9 @@ export default class AppClass extends React.Component {
   }
 
   move = (id) => {
-    const nextIndex = this.getNextIndex(id);
     this.setState({
       ...this.state, 
-      index: nextIndex
+      index: this.getNextIndex(id)
     })
   }
 
