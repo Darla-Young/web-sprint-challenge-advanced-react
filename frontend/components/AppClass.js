@@ -72,7 +72,6 @@ export default class AppClass extends React.Component {
     const id = evt.target.id;
     if (id === "reset") {this.reset()}
     else if (this.state.index !== this.getNextIndex(id)) {
-      console.log(this.state.index + " -> " + this.getNextIndex(id));
       this.setState({
         ...this.state,
         index: this.getNextIndex(id),
@@ -109,7 +108,7 @@ export default class AppClass extends React.Component {
         message: err.response.data.message,
         email: ''
       })
-    });    
+    })
   }
 
   render() {
